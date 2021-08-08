@@ -3,10 +3,10 @@ class CountdownTimer {
     this.timerEl = document.querySelector(selector);
     this.targetDate = targetDate;
     this.intervalId = null;
-    this.daysValue = this.timerEl.childNodes[1].childNodes[1];
-    this.hoursValue = this.timerEl.childNodes[3].childNodes[1];
-    this.minsValue = this.timerEl.childNodes[5].childNodes[1];
-    this.secsValue = this.timerEl.childNodes[7].childNodes[1];
+    this.daysValue = this.timerEl.children[0].children[0];
+    this.hoursValue = this.timerEl.children[1].children[0];
+    this.minsValue = this.timerEl.children[2].children[0];
+    this.secsValue = this.timerEl.children[3].children[0];
   }
 
   start() {
